@@ -7,6 +7,5 @@
 !/tmp/.keep
 .byebug_history
 /.capistrano
-/config/secrets.yml
 /config/database.yml
 /node_modules
