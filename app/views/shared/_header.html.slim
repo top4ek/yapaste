@@ -1,0 +1,10 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      = link_to t('title'), posts_path, class: 'navbar-brand', title: t('post.all')
+    ul.nav.navbar-nav.navbar-left
+      li = link_to t('post.new'), new_post_path
+      == yield(:menu)
+    ul.nav.navbar-nav.navbar-right
+      li == paginate @posts if @posts.present?
+      li = link_to fa_icon('fw info'), '#', data: { toggle: 'modal', target: '#about' }

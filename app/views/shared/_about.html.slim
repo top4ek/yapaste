@@ -1,0 +1,8 @@
+#about.modal.fade tabindex='-1'
+  .modal-dialog role='document'
+    .modal-content
+      .modal-header
+        button.close aria-label='Close' data-dismiss='modal' type='button'
+          span aria-hidden='true'  &times;
+        h4.modal-title = t('title')
+      pre.unstyled.modal-body = t('about')

@@ -1,0 +1,9 @@
+.panel.panel-default
+  .panel-heading
+    .row
+      .col-md-10 = l comment.created_at.localtime, format: :full
+      .col-md-2
+        | #
+        = comment.id
+  .panel-body
+    = comment.message

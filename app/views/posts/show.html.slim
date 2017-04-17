@@ -1,0 +1,7 @@
+= content_for :menu
+  li = link_to t('post.delete'), @post, data: { confirm: t('post.areusure')}, method: :delete
+  li = link_to t('post.fork'), fork_post_path(@post)
+= render partial: 'full_post', locals: { post: @post }
+.commentsBox
+  = render @comments
+  = render 'comments/form'

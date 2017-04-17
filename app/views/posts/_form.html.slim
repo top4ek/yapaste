@@ -1,0 +1,6 @@
+= simple_form_for @post do |f|
+  = f.hidden_field :forked_from_id, value: @post.forked_from_id
+  = f.input :name
+  = f.input :title
+  = f.input :snippet, input_html: { rows: 25 }
+  = f.button :submit

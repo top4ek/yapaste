@@ -1,0 +1,13 @@
+ru:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: Неверная запись
+
+    attributes:
+      post:
+        name: Имя сниппета
+        title: Описание сниппета
+        snippet: Текст сниппета
+      comment:
+        message: Сообщение

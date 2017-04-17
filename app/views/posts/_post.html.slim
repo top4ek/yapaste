@@ -1,0 +1,10 @@
+.panel.panel-default
+  .panel-heading
+    .row
+      .col-md-10 = link_to post.name, post
+      .col-md-2
+        = fa_icon('fw comments')
+        = post.comments.size
+    .row
+      .col-md-10 = "#{t('post.title')}: #{post.title}"
+      .col-md-2 = post.decorate.forked
